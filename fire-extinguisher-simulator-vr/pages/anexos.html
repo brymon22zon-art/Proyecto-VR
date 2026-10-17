@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anexos Técnicos y Evaluación | Fire Extinguisher Simulator VR</title>
+  <meta name="description" content="Anexos técnicos, glosario inmersivo, cuestionario de evaluación y galería de activos en Fire Extinguisher Simulator VR." />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="../index.html" class="brand-link">
+        <div class="brand-icon">🔥</div>
+        <div class="brand-text">
+          <span class="brand-title">Fire Extinguisher Simulator VR</span>
+          <span class="brand-sub">Tecnologías Inmersivas</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="../index.html" class="nav-link">Inicio</a>
+        
+        <div class="nav-dropdown">
+          <button class="nav-link dropdown-trigger" type="button">
+            Fundamentos ▾
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="introduccion.html" class="nav-link">02. Introducción</a></li>
+            <li><a href="objetivos.html" class="nav-link">03. Objetivos</a></li>
+            <li><a href="problema.html" class="nav-link">04. Planteamiento del Problema</a></li>
+            <li><a href="justificacion.html" class="nav-link">05. Justificación</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-dropdown">
+          <button class="nav-link dropdown-trigger" type="button">
+            Investigación ▾
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="metodologia.html" class="nav-link">06. Metodología</a></li>
+            <li><a href="resultados.html" class="nav-link">07. Resultados Esperados</a></li>
+            <li><a href="conclusiones.html" class="nav-link">09. Conclusiones</a></li>
+          </ul>
+        </div>
+
+        <a href="simulador.html" class="nav-link">08. Simulador</a>
+        <a href="bibliografia.html" class="nav-link">10. Bibliografía</a>
+        <a href="anexos.html" class="nav-link active">11. Anexos</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="simulador.html" class="btn-cta">Probar Simulador VR</a>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Abrir menú" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav" id="mobileNav">
+      <ul class="mobile-nav-list">
+        <li><a href="../index.html" class="nav-link">01. Inicio</a></li>
+        <li><a href="introduccion.html" class="nav-link">02. Introducción</a></li>
+        <li><a href="objetivos.html" class="nav-link">03. Objetivos</a></li>
+        <li><a href="problema.html" class="nav-link">04. Planteamiento del Problema</a></li>
+        <li><a href="justificacion.html" class="nav-link">05. Justificación</a></li>
+        <li><a href="metodologia.html" class="nav-link">06. Metodología</a></li>
+        <li><a href="resultados.html" class="nav-link">07. Resultados Esperados</a></li>
+        <li><a href="simulador.html" class="nav-link">08. Experiencia del Simulador</a></li>
+        <li><a href="conclusiones.html" class="nav-link">09. Conclusiones</a></li>
+        <li><a href="bibliografia.html" class="nav-link">10. Bibliografía</a></li>
+        <li><a href="anexos.html" class="nav-link active">11. Anexos</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="academic-badge-bar">
+      <span>Capítulo 11</span>
+      <span class="academic-separator">·</span>
+      <span>Cátedra de <strong>Tecnologías Inmersivas</strong></span>
+      <span class="academic-separator">·</span>
+      <span>Material Complementario y Validación Didáctica</span>
+    </div>
+
+    <div class="page-hero">
+      <div class="page-kicker">Capítulo 11 · Documentación Complementaria</div>
+      <h1 class="page-title">
+        Anexos Técnicos y <span class="highlight">Evaluación</span>
+      </h1>
+      <p class="page-subtitle">
+        Glosario de conceptos inmersivos, banco interactivo de preguntas para brigadistas, especificaciones de hardware y registro de activos visuales.
+      </p>
+    </div>
+
+    <!-- Anexo A: Cuestionario Interactivo de Validación Didáctica -->
+    <section class="card" style="margin-bottom: 3rem; border-color: rgba(14, 165, 233, 0.4);">
+      <div style="display: flex; gap: 0.75rem; align-items: center; margin-bottom: 1rem;">
+        <span style="font-size: 1.5rem;">📝</span>
+        <div>
+          <h2 style="font-size: 1.3rem; font-weight: 800; color: #fff;">
+            Anexo A: Cuestionario de Evaluación de Competencias en Combate de Incendios
+          </h2>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">
+            Pon a prueba tus conocimientos sobre los protocolos y física del simulador virtual:
+          </p>
+        </div>
+      </div>
+
+      <form id="academicQuizForm" style="display: flex; flex-direction: column; gap: 1.25rem;">
+        <!-- Q1 -->
+        <div style="background: rgba(10, 14, 23, 0.6); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-light);">
+          <p style="font-weight: 700; color: #fff; font-size: 0.95rem; margin-bottom: 0.5rem;">
+            1. ¿Qué significan las siglas del protocolo normativo P.A.S.S. en español?
+          </p>
+          <label style="display: block; font-size: 0.88rem; color: #cbd5e1; margin-bottom: 0.35rem; cursor: pointer;">
+            <input type="radio" name="q1" value="a" required style="margin-right: 0.5rem;" />
+            A) Parar, Avisar, Salvar y Socorrer
+          </label>
+          <label style="display: block; font-size: 0.88rem; color: #cbd5e1; margin-bottom: 0.35rem; cursor: pointer;">
+            <input type="radio" name="q1" value="b" style="margin-right: 0.5rem;" />
+            B) Tirar (Pull), Apuntar (Aim), Apretar (Squeeze) y Barrer (Sweep)
+          </label>
+          <label style="display: block; font-size: 0.88rem; color: #cbd5e1; cursor: pointer;">
+            <input type="radio" name="q1" value="c" style="margin-right: 0.5rem;" />
+            C) Proteger, Alertar, Sofocar y Salir
+          </label>
+        </div>
+
+        <!-- Q2 -->
+        <div style="background: rgba(10, 14, 23, 0.6); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-light);">
+          <p style="font-weight: 700; color: #fff; font-size: 0.95rem; margin-bottom: 0.5rem;">
+            2. En un conato de incendio en un tablero eléctrico energizado de servidores, ¿qué clase de fuego es?
+          </p>
+          <label style="display: block; font-size: 0.88rem; color: #cbd5e1; margin-bottom: 0.35rem; cursor: pointer;">
+            <input type="radio" name="q2" value="a" required style="margin-right: 0.5rem;" />
+            A) Fuego Clase A (combustible ordinario)
+          </label>
+          <label style="display: block; font-size: 0.88rem; color: #cbd5e1; margin-bottom: 0.35rem; cursor: pointer;">
+            <input type="radio" name="q2" value="b" style="margin-right: 0.5rem;" />
+            B) Fuego Clase B (líquidos inflamables)
+          </label>
+          <label style="display: block; font-size: 0.88rem; color: #cbd5e1; cursor: pointer;">
+            <input type="radio" name="q2" value="c" style="margin-right: 0.5rem;" />
+            C) Fuego Clase C (equipos eléctricos bajo tensión)
+          </label>
+        </div>
+
+        <!-- Q3 -->
+        <div style="background: rgba(10, 14, 23, 0.6); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-light);">
+          <p style="font-weight: 700; color: #fff; font-size: 0.95rem; margin-bottom: 0.5rem;">
+            3. ¿Qué grado de libertad posicional y rotacional utiliza el visor Meta Quest 2?
+          </p>
+          <label style="display: block; font-size: 0.88rem; color: #cbd5e1; margin-bottom: 0.35rem; cursor: pointer;">
+            <input type="radio" name="q3" value="3dof" required style="margin-right: 0.5rem;" />
+            A) 3 DoF (solo orientación de cabeza)
+          </label>
+          <label style="display: block; font-size: 0.88rem; color: #cbd5e1; margin-bottom: 0.35rem; cursor: pointer;">
+            <input type="radio" name="q3" value="6dof" style="margin-right: 0.5rem;" />
+            B) 6 DoF (orientación y traslación completa en el espacio tridimensional)
+          </label>
+          <label style="display: block; font-size: 0.88rem; color: #cbd5e1; cursor: pointer;">
+            <input type="radio" name="q3" value="9dof" style="margin-right: 0.5rem;" />
+            C) 9 DoF con sensores externos fijados en postes
+          </label>
+        </div>
+
+        <!-- Q4 -->
+        <div style="background: rgba(10, 14, 23, 0.6); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-light);">
+          <p style="font-weight: 700; color: #fff; font-size: 0.95rem; margin-bottom: 0.5rem;">
+            4. Al presionar la palanca de descarga, ¿hacia dónde debe apuntarse la tobera del extintor?
+          </p>
+          <label style="display: block; font-size: 0.88rem; color: #cbd5e1; margin-bottom: 0.35rem; cursor: pointer;">
+            <input type="radio" name="q4" value="humo" required style="margin-right: 0.5rem;" />
+            A) Hacia la parte más alta de la columna de humo
+          </label>
+          <label style="display: block; font-size: 0.88rem; color: #cbd5e1; margin-bottom: 0.35rem; cursor: pointer;">
+            <input type="radio" name="q4" value="base" style="margin-right: 0.5rem;" />
+            B) Directamente hacia la base del combustible en combustión
+          </label>
+          <label style="display: block; font-size: 0.88rem; color: #cbd5e1; cursor: pointer;">
+            <input type="radio" name="q4" value="aire" style="margin-right: 0.5rem;" />
+            C) En círculo hacia el aire para enfriar el ambiente circundante
+          </label>
+        </div>
+
+        <button type="submit" class="btn-cta" style="align-self: flex-start; padding: 0.65rem 1.75rem;">
+          Evaluar Respuestas
+        </button>
+      </form>
+
+      <div id="quizResult" style="display: none; margin-top: 1.5rem;"></div>
+    </section>
+
+    <!-- Anexo B: Glosario de Términos -->
+    <h2 style="font-size: 1.45rem; font-weight: 800; color: #fff; margin-bottom: 1.25rem;">
+      Anexo B: Glosario Técnico de Tecnologías Inmersivas y Seguridad
+    </h2>
+
+    <div class="grid-2" style="margin-bottom: 3rem;">
+      <div class="card">
+        <h4 style="color: var(--accent-red); font-size: 1.05rem; font-weight: 700; margin-bottom: 0.25rem;">6 DoF (Six Degrees of Freedom)</h4>
+        <p class="card-text" style="font-size: 0.88rem;">
+          Capacidad de un sistema inmersivo de rastrear tanto la rotación angular (cabeceo, guiñada y balanceo) como la traslación espacial física del usuario en los ejes X, Y y Z.
+        </p>
+      </div>
+
+      <div class="card">
+        <h4 style="color: var(--accent-red); font-size: 1.05rem; font-weight: 700; margin-bottom: 0.25rem;">Protocolo P.A.S.S.</h4>
+        <p class="card-text" style="font-size: 0.88rem;">
+          Nemotecnia internacional establecida por la NFPA: <strong>P</strong>ull (Tirar del pasador), <strong>A</strong>im (Apuntar a la base), <strong>S</strong>queeze (Apretar gatillo) y <strong>S</strong>weep (Barrer en abanico horizontal).
+        </p>
+      </div>
+
+      <div class="card">
+        <h4 style="color: var(--accent-cyan); font-size: 1.05rem; font-weight: 700; margin-bottom: 0.25rem;">Retroalimentación Háptica</h4>
+        <p class="card-text" style="font-size: 0.88rem;">
+          Estímulos táctiles generados por motores de masa excéntrica o actuadores lineales en los controladores para transmitir sensaciones físicas de impacto, resistencia mecánica y vibración presurizada.
+        </p>
+      </div>
+
+      <div class="card">
+        <h4 style="color: var(--accent-cyan); font-size: 1.05rem; font-weight: 700; margin-bottom: 0.25rem;">Conato de Incendio</h4>
+        <p class="card-text" style="font-size: 0.88rem;">
+          Fase inicial de un fuego localizada y de reducidas proporciones que puede ser extinguida mediante el uso de extintores portátiles antes de propagarse.
+        </p>
+      </div>
+
+      <div class="card">
+        <h4 style="color: var(--accent-amber); font-size: 1.05rem; font-weight: 700; margin-bottom: 0.25rem;">Inside-Out SLAM Tracking</h4>
+        <p class="card-text" style="font-size: 0.88rem;">
+          Algoritmo de localización y mapeo simultáneo ejecutado mediante las 4 cámaras monocromáticas del Meta Quest 2 que triangulan el entorno físico sin marcadores externos.
+        </p>
+      </div>
+
+      <div class="card">
+        <h4 style="color: var(--accent-amber); font-size: 1.05rem; font-weight: 700; margin-bottom: 0.25rem;">Polvo Químico Seco (PQS ABC)</h4>
+        <p class="card-text" style="font-size: 0.88rem;">
+          Agente compuesto fundamentalmente por fosfato monoamónico silanizado que extingue el fuego al descomponerse endotérmicamente e interrumpir la reacción en cadena de los radicales libres.
+        </p>
+      </div>
+    </div>
+
+    <!-- Anexo C: Galería de Activos del Proyecto -->
+    <h2 style="font-size: 1.45rem; font-weight: 800; color: #fff; margin-bottom: 1.25rem;">
+      Anexo C: Registro de Activos Gráficos y Multimedia
+    </h2>
+
+    <div class="grid-4" style="margin-bottom: 3rem;">
+      <div class="card" style="padding: 1rem;">
+        <img src="../Imagenes/meta_quest_2.jpg" alt="Meta Quest 2" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px; margin-bottom: 0.75rem;" class="lightbox-trigger" />
+        <h5 style="color: #fff; font-size: 0.85rem; font-weight: 700;">meta_quest_2.jpg</h5>
+        <p style="font-size: 0.75rem; color: var(--text-muted);">Visor VR y mandos Touch en laboratorio de cómputo.</p>
+      </div>
+
+      <div class="card" style="padding: 1rem;">
+        <img src="../Imagenes/extintor.jpg" alt="Extintor ABC" style="width: 100%; height: 130px; object-fit: contain; background: #000; border-radius: 6px; margin-bottom: 0.75rem;" class="lightbox-trigger" />
+        <h5 style="color: #fff; font-size: 0.85rem; font-weight: 700;">extintor.jpg</h5>
+        <p style="font-size: 0.75rem; color: var(--text-muted);">Extintor reglamentario con manómetro y etiqueta técnica.</p>
+      </div>
+
+      <div class="card" style="padding: 1rem;">
+        <img src="../Imagenes/incendio.jpg" alt="Simulacro de Incendio" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px; margin-bottom: 0.75rem;" class="lightbox-trigger" />
+        <h5 style="color: #fff; font-size: 0.85rem; font-weight: 700;">incendio.jpg</h5>
+        <p style="font-size: 0.75rem; color: var(--text-muted);">Simulacro presencial con humo y fuego en instalaciones.</p>
+      </div>
+
+      <div class="card" style="padding: 1rem;">
+        <img src="../Imagenes/captura_simulador.jpg" alt="Captura del Simulador" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px; margin-bottom: 0.75rem;" class="lightbox-trigger" />
+        <h5 style="color: #fff; font-size: 0.85rem; font-weight: 700;">captura_simulador.jpg</h5>
+        <p style="font-size: 0.75rem; color: var(--text-muted);">Vista en primera persona del simulador interactivo.</p>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="page-pagination">
+      <a href="bibliografia.html" class="pagination-btn">
+        <span class="pagination-label">Capítulo anterior</span>
+        <span class="pagination-title">← 10. Bibliografía</span>
+      </a>
+      <a href="../index.html" class="pagination-btn" style="text-align: right;">
+        <span class="pagination-label">Finalizar lectura</span>
+        <span class="pagination-title">Volver al Inicio ↺</span>
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-col">
+          <h4>Fire Extinguisher Simulator VR</h4>
+          <p>Materia: Tecnologías Inmersivas · Proyecto Académico 2026</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="introduccion.html">Introducción</a></li>
+            <li><a href="objetivos.html">Objetivos</a></li>
+            <li><a href="problema.html">Problema</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Desarrollo</h4>
+          <ul class="footer-links">
+            <li><a href="justificacion.html">Justificación</a></li>
+            <li><a href="metodologia.html">Metodología</a></li>
+            <li><a href="resultados.html">Resultados</a></li>
+            <li><a href="simulador.html">Simulador VR</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Documentos</h4>
+          <ul class="footer-links">
+            <li><a href="conclusiones.html">Conclusiones</a></li>
+            <li><a href="bibliografia.html">Bibliografía</a></li>
+            <li><a href="anexos.html">Anexos</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Universidad - Tecnologías Inmersivas</div>
+        <div>Meta Quest 2 Training Suite</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

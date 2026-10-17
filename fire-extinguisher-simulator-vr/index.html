@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fire Extinguisher Simulator VR | Capacitación en Realidad Virtual</title>
+  <meta name="description" content="Proyecto universitario de Tecnologías Inmersivas: Fire Extinguisher Simulator VR. Capacitación práctica en el uso correcto de extintores y combate de incendios mediante Meta Quest 2." />
+  <meta property="og:title" content="Fire Extinguisher Simulator VR" />
+  <meta property="og:description" content="Capacitación en el uso correcto de extintores mediante realidad virtual. Tecnologías Inmersivas." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-link">
+        <div class="brand-icon">🔥</div>
+        <div class="brand-text">
+          <span class="brand-title">Fire Extinguisher Simulator VR</span>
+          <span class="brand-sub">Tecnologías Inmersivas</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link active">Inicio</a>
+        
+        <div class="nav-dropdown">
+          <button class="nav-link dropdown-trigger" type="button">
+            Fundamentos ▾
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="pages/introduccion.html" class="nav-link">02. Introducción</a></li>
+            <li><a href="pages/objetivos.html" class="nav-link">03. Objetivos</a></li>
+            <li><a href="pages/problema.html" class="nav-link">04. Planteamiento del Problema</a></li>
+            <li><a href="pages/justificacion.html" class="nav-link">05. Justificación</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-dropdown">
+          <button class="nav-link dropdown-trigger" type="button">
+            Investigación ▾
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="pages/metodologia.html" class="nav-link">06. Metodología</a></li>
+            <li><a href="pages/resultados.html" class="nav-link">07. Resultados Esperados</a></li>
+            <li><a href="pages/conclusiones.html" class="nav-link">09. Conclusiones</a></li>
+          </ul>
+        </div>
+
+        <a href="pages/simulador.html" class="nav-link">08. Simulador</a>
+        <a href="pages/bibliografia.html" class="nav-link">10. Bibliografía</a>
+        <a href="pages/anexos.html" class="nav-link">11. Anexos</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="pages/simulador.html" class="btn-cta">Probar Simulador VR</a>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="nav-link active">01. Inicio</a></li>
+        <li><a href="pages/introduccion.html" class="nav-link">02. Introducción</a></li>
+        <li><a href="pages/objetivos.html" class="nav-link">03. Objetivos</a></li>
+        <li><a href="pages/problema.html" class="nav-link">04. Planteamiento del Problema</a></li>
+        <li><a href="pages/justificacion.html" class="nav-link">05. Justificación</a></li>
+        <li><a href="pages/metodologia.html" class="nav-link">06. Metodología</a></li>
+        <li><a href="pages/resultados.html" class="nav-link">07. Resultados Esperados</a></li>
+        <li><a href="pages/simulador.html" class="nav-link">08. Experiencia del Simulador</a></li>
+        <li><a href="pages/conclusiones.html" class="nav-link">09. Conclusiones</a></li>
+        <li><a href="pages/bibliografia.html" class="nav-link">10. Bibliografía</a></li>
+        <li><a href="pages/anexos.html" class="nav-link">11. Anexos</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Academic Badge Bar -->
+    <div class="academic-badge-bar">
+      <span><strong>Facultad de Ingeniería</strong></span>
+      <span class="academic-separator">·</span>
+      <span>Cátedra de <strong>Tecnologías Inmersivas</strong></span>
+      <span class="academic-separator">·</span>
+      <span>Plataforma: <strong>Meta Quest 2 (6 DoF)</strong></span>
+      <span class="academic-separator">·</span>
+      <span>Ciclo Académico 2026</span>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="page-hero">
+      <div class="page-kicker">Proyecto Académico de Grado e Innovación</div>
+      <h1 class="page-title">
+        Fire Extinguisher Simulator VR: <span class="highlight">Capacitación Inmersiva en Combate de Incendios</span>
+      </h1>
+      <p class="page-subtitle">
+        Desarrollo de un entorno virtual interactivo para la enseñanza y perfeccionamiento en el uso correcto de extintores portátiles bajo normativa NFPA 10, optimizado para el visor Meta Quest 2.
+      </p>
+    </div>
+
+    <!-- Featured Gallery Grid -->
+    <div class="grid-2" style="margin-bottom: 2.5rem;">
+      <div class="media-card">
+        <div class="media-image-wrapper">
+          <img src="Imagenes/captura_simulador.jpg" alt="Captura del Simulador Fire Extinguisher VR" class="media-image lightbox-trigger" />
+          <span class="media-badge">Captura en Tiempo Real</span>
+        </div>
+        <div class="media-content">
+          <h3 class="card-title">Interacción VR en Primera Persona</h3>
+          <p class="card-text">
+            El usuario manipula el extintor mediante controladores hápticos con seguimiento posicional de 6 grados de libertad (6 DoF), recibiendo retroalimentación visual inmediata sobre el protocolo P.A.S.S.
+          </p>
+          <div style="margin-top: 1rem;">
+            <a href="pages/simulador.html" class="btn-cta" style="font-size: 0.8rem; padding: 0.4rem 0.85rem;">Explorar entorno interactivo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="media-card">
+        <div class="media-image-wrapper">
+          <img src="Imagenes/meta_quest_2.jpg" alt="Dispositivo Meta Quest 2 en laboratorio universitario" class="media-image lightbox-trigger" />
+          <span class="media-badge">Hardware Académico</span>
+        </div>
+        <div class="media-content">
+          <h3 class="card-title">Arquitectura Standalone Meta Quest 2</h3>
+          <p class="card-text">
+            Implementación portátil sin cables que permite realizar capacitaciones masivas en aulas, pasillos y centros de trabajo sin riesgos de intoxicación ni consumo de agentes químicos reales.
+          </p>
+          <div style="margin-top: 1rem;">
+            <a href="pages/metodologia.html" class="nav-link" style="display: inline-block; padding-left: 0; color: #38bdf8;">Ver especificaciones de hardware →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Academic Index Cards Grid -->
+    <h2 style="font-size: 1.5rem; font-weight: 800; color: #fff; margin-bottom: 1.25rem;">
+      Estructura de la Documentación Académica
+    </h2>
+
+    <div class="grid-3" style="margin-bottom: 3rem;">
+      <a href="pages/introduccion.html" class="card" style="text-decoration: none;">
+        <div class="card-title">
+          <span class="card-icon">02</span>
+          Introducción
+        </div>
+        <p class="card-text">
+          Contextualización de los conatos de incendio, estadísticas de respuesta ante emergencias y el impacto formativo de la realidad virtual.
+        </p>
+      </a>
+
+      <a href="pages/objetivos.html" class="card" style="text-decoration: none;">
+        <div class="card-title">
+          <span class="card-icon">03</span>
+          Objetivos
+        </div>
+        <p class="card-text">
+          Metas generales y específicas del proyecto: modelado 3D, lógica física del fuego, interfaz HUD háptica y evaluación cuantitativa.
+        </p>
+      </a>
+
+      <a href="pages/problema.html" class="card" style="text-decoration: none;">
+        <div class="card-title">
+          <span class="card-icon">04</span>
+          Planteamiento
+        </div>
+        <p class="card-text">
+          Dificultades operativas y económicas en los entrenamientos convencionales con fuego vivo y la falta de memoria muscular de la población.
+        </p>
+      </a>
+
+      <a href="pages/justificacion.html" class="card" style="text-decoration: none;">
+        <div class="card-title">
+          <span class="card-icon">05</span>
+          Justificación
+        </div>
+        <p class="card-text">
+          Sostenibilidad ambiental con cero emisiones de CO2, reducción drástica de costos logísticos y seguridad total para el estudiante.
+        </p>
+      </a>
+
+      <a href="pages/metodologia.html" class="card" style="text-decoration: none;">
+        <div class="card-title">
+          <span class="card-icon">06</span>
+          Metodología
+        </div>
+        <p class="card-text">
+          Fases de desarrollo ágil: conceptualización, ingeniería de partículas, telemetría de rendimiento y validación experimental.
+        </p>
+      </a>
+
+      <a href="pages/resultados.html" class="card" style="text-decoration: none;">
+        <div class="card-title">
+          <span class="card-icon">07</span>
+          Resultados Esperados
+        </div>
+        <p class="card-text">
+          Métricas de desempeño: retención de aprendizaje, reducción del tiempo de reacción y tasa de éxito en el protocolo P.A.S.S.
+        </p>
+      </a>
+
+      <a href="pages/simulador.html" class="card" style="text-decoration: none; border-color: rgba(239, 68, 68, 0.4);">
+        <div class="card-title">
+          <span class="card-icon" style="background: rgba(239,68,68,0.25);">08</span>
+          Simulador VR
+        </div>
+        <p class="card-text">
+          Consola interactiva virtual: prueba de los 4 pasos P.A.S.S., selección de extintores y vista de la cabina de entrenamiento.
+        </p>
+      </a>
+
+      <a href="pages/conclusiones.html" class="card" style="text-decoration: none;">
+        <div class="card-title">
+          <span class="card-icon">09</span>
+          Conclusiones
+        </div>
+        <p class="card-text">
+          Hallazgos del proyecto, viabilidad de integración curricular y proyección hacia escenarios de evacuación con humo denso.
+        </p>
+      </a>
+
+      <a href="pages/bibliografia.html" class="card" style="text-decoration: none;">
+        <div class="card-title">
+          <span class="card-icon">10</span>
+          Bibliografía
+        </div>
+        <p class="card-text">
+          Fuentes especializadas, normas NFPA, literatura en computación gráfica, interacción persona-ordenador y artículos IEEE.
+        </p>
+      </a>
+    </div>
+
+    <!-- Secondary Media Row -->
+    <div class="grid-2" style="margin-bottom: 3rem;">
+      <div class="card">
+        <div style="display: flex; gap: 1.25rem; align-items: center; margin-bottom: 1rem;">
+          <img src="Imagenes/extintor.jpg" alt="Extintor ABC reglamentario" style="width: 90px; height: 110px; object-fit: contain; background: #000; border-radius: 8px; padding: 4px;" class="lightbox-trigger" />
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 700; color: #fff;">Extintor Portátil Tipo ABC</h3>
+            <span style="font-size: 0.8rem; color: var(--accent-amber); font-family: var(--font-mono);">Normativa Técnica NFPA 10</span>
+            <p style="font-size: 0.86rem; color: var(--text-secondary); margin-top: 0.35rem;">
+              Agente presurizado de Polvo Químico Seco (Fosfato Monoamónico) diseñado para fuegos de clase A (sólidos), B (líquidos) y C (eléctricos).
+            </p>
+          </div>
+        </div>
+        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55;">
+          El simulador reproduce minuciosamente la masa del equipo, la resistencia de activación del gatillo y el tiempo efectivo de descarga continua (10 a 14 segundos).
+        </p>
+      </div>
+
+      <div class="card">
+        <div style="display: flex; gap: 1.25rem; align-items: center; margin-bottom: 1rem;">
+          <img src="Imagenes/incendio.jpg" alt="Simulacro de incendio controlado" style="width: 110px; height: 110px; object-fit: cover; border-radius: 8px;" class="lightbox-trigger" />
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 700; color: #fff;">Escenario de Conato Realista</h3>
+            <span style="font-size: 0.8rem; color: var(--accent-red); font-family: var(--font-mono);">Física Termodinámica en VR</span>
+            <p style="font-size: 0.86rem; color: var(--text-secondary); margin-top: 0.35rem;">
+              Simulación del triángulo y tetraedro del fuego con propagación procedural y respuesta dinámica ante la aplicación del agente extintor.
+            </p>
+          </div>
+        </div>
+        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.55;">
+          El alumno enfrenta factores de estrés como humo virtual volumétrico, alarmas sonoras espaciales y limitación de tiempo antes de la propagación descontrolada.
+        </p>
+      </div>
+    </div>
+
+    <!-- Pager -->
+    <div class="page-pagination">
+      <div></div>
+      <a href="pages/introduccion.html" class="pagination-btn" style="text-align: right;">
+        <span class="pagination-label">Siguiente capítulo</span>
+        <span class="pagination-title">02. Introducción →</span>
+      </a>
+    </div>
+  </main>
+
+  <!-- Academic Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-col">
+          <h4>Fire Extinguisher Simulator VR</h4>
+          <p>
+            Plataforma universitaria de capacitación y divulgación científica orientada a la prevención de siniestros y adiestramiento en seguridad mediante tecnologías inmersivas.
+          </p>
+          <p style="margin-top: 0.75rem; color: #94a3b8; font-size: 0.8rem;">
+            Desarrollado para la materia de <strong>Tecnologías Inmersivas</strong>.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Marco Teórico</h4>
+          <ul class="footer-links">
+            <li><a href="pages/introduccion.html">Introducción</a></li>
+            <li><a href="pages/objetivos.html">Objetivos del Proyecto</a></li>
+            <li><a href="pages/problema.html">Planteamiento del Problema</a></li>
+            <li><a href="pages/justificacion.html">Justificación del Estudio</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Desarrollo</h4>
+          <ul class="footer-links">
+            <li><a href="pages/metodologia.html">Metodología</a></li>
+            <li><a href="pages/resultados.html">Resultados Esperados</a></li>
+            <li><a href="pages/simulador.html">Experiencia VR</a></li>
+            <li><a href="pages/conclusiones.html">Conclusiones</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Documentación</h4>
+          <ul class="footer-links">
+            <li><a href="pages/bibliografia.html">Bibliografía y Normas</a></li>
+            <li><a href="pages/anexos.html">Anexos Técnicos</a></li>
+            <li><a href="index.html">Portada Principal</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Universidad - Facultad de Ingeniería y Ciencias Aplicadas.
+        </div>
+        <div>
+          Materia: Tecnologías Inmersivas · Meta Quest 2 Environment
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experiencia del Simulador VR | Fire Extinguisher Simulator VR</title>
+  <meta name="description" content="Consola interactiva y análisis de la experiencia inmersiva en Fire Extinguisher Simulator VR con Meta Quest 2." />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="../index.html" class="brand-link">
+        <div class="brand-icon">🔥</div>
+        <div class="brand-text">
+          <span class="brand-title">Fire Extinguisher Simulator VR</span>
+          <span class="brand-sub">Tecnologías Inmersivas</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="../index.html" class="nav-link">Inicio</a>
+        
+        <div class="nav-dropdown">
+          <button class="nav-link dropdown-trigger" type="button">
+            Fundamentos ▾
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="introduccion.html" class="nav-link">02. Introducción</a></li>
+            <li><a href="objetivos.html" class="nav-link">03. Objetivos</a></li>
+            <li><a href="problema.html" class="nav-link">04. Planteamiento del Problema</a></li>
+            <li><a href="justificacion.html" class="nav-link">05. Justificación</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-dropdown">
+          <button class="nav-link dropdown-trigger" type="button">
+            Investigación ▾
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="metodologia.html" class="nav-link">06. Metodología</a></li>
+            <li><a href="resultados.html" class="nav-link">07. Resultados Esperados</a></li>
+            <li><a href="conclusiones.html" class="nav-link">09. Conclusiones</a></li>
+          </ul>
+        </div>
+
+        <a href="simulador.html" class="nav-link active">08. Simulador</a>
+        <a href="bibliografia.html" class="nav-link">10. Bibliografía</a>
+        <a href="anexos.html" class="nav-link">11. Anexos</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="simulador.html" class="btn-cta">Probar Simulador VR</a>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Abrir menú" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav" id="mobileNav">
+      <ul class="mobile-nav-list">
+        <li><a href="../index.html" class="nav-link">01. Inicio</a></li>
+        <li><a href="introduccion.html" class="nav-link">02. Introducción</a></li>
+        <li><a href="objetivos.html" class="nav-link">03. Objetivos</a></li>
+        <li><a href="problema.html" class="nav-link">04. Planteamiento del Problema</a></li>
+        <li><a href="justificacion.html" class="nav-link">05. Justificación</a></li>
+        <li><a href="metodologia.html" class="nav-link">06. Metodología</a></li>
+        <li><a href="resultados.html" class="nav-link">07. Resultados Esperados</a></li>
+        <li><a href="simulador.html" class="nav-link active">08. Experiencia del Simulador</a></li>
+        <li><a href="conclusiones.html" class="nav-link">09. Conclusiones</a></li>
+        <li><a href="bibliografia.html" class="nav-link">10. Bibliografía</a></li>
+        <li><a href="anexos.html" class="nav-link">11. Anexos</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="academic-badge-bar">
+      <span>Capítulo 08</span>
+      <span class="academic-separator">·</span>
+      <span>Cátedra de <strong>Tecnologías Inmersivas</strong></span>
+      <span class="academic-separator">·</span>
+      <span>Entorno Interactivo y Telemetría en Tiempo Real</span>
+    </div>
+
+    <div class="page-hero">
+      <div class="page-kicker">Capítulo 08 · Demostración Interactivada</div>
+      <h1 class="page-title">
+        Experiencia del <span class="highlight">Simulador VR</span>
+      </h1>
+      <p class="page-subtitle">
+        Demostración del pipeline interactivo implementado en Meta Quest 2: consola de simulación del protocolo P.A.S.S., retroalimentación cinemática y selector de tipos de extintores.
+      </p>
+    </div>
+
+    <!-- Interactive Simulator Console -->
+    <section class="simulator-console">
+      <div class="console-header">
+        <div>
+          <span style="font-size: 0.75rem; color: var(--accent-red); font-family: var(--font-mono); text-transform: uppercase; font-weight: 700;">Consola de Entrenamiento Didáctico</span>
+          <h2 class="console-title">Protocolo Normativo P.A.S.S. en Realidad Virtual</h2>
+        </div>
+        <div style="font-size: 0.82rem; color: var(--text-secondary); font-family: var(--font-mono);">
+          Telemetría: <span style="color: #10b981;">Activa (Meta Quest 2)</span>
+        </div>
+      </div>
+
+      <!-- 4 P.A.S.S. Steps Selector -->
+      <div class="pass-stepper">
+        <div class="pass-step active" data-step="0">
+          <div class="pass-letter">P</div>
+          <div class="pass-step-name">1. PULL</div>
+          <div class="pass-step-desc">Tirar del pasador</div>
+        </div>
+
+        <div class="pass-step" data-step="1">
+          <div class="pass-letter">A</div>
+          <div class="pass-step-name">2. AIM</div>
+          <div class="pass-step-desc">Apuntar a la base</div>
+        </div>
+
+        <div class="pass-step" data-step="2">
+          <div class="pass-letter">S</div>
+          <div class="pass-step-name">3. SQUEEZE</div>
+          <div class="pass-step-desc">Apretar la palanca</div>
+        </div>
+
+        <div class="pass-step" data-step="3">
+          <div class="pass-letter">S</div>
+          <div class="pass-step-name">4. SWEEP</div>
+          <div class="pass-step-desc">Barrer en abanico</div>
+        </div>
+      </div>
+
+      <!-- Virtual Stage Screen with Live Image -->
+      <div class="simulator-stage">
+        <img src="../Imagenes/captura_simulador.jpg" alt="Simulación interactiva de extinción de fuego en VR" id="stageImage" class="lightbox-trigger" />
+        
+        <!-- Live HUD Overlay -->
+        <div class="sim-hud">
+          <div id="hudStatus" style="font-weight: 700; color: #fff;">FASE VR: PULL (Tirar)</div>
+          <div id="hudGauge">Presión: 1.4 MPa (Zona Verde)</div>
+          <div id="hudFire">INTENSIDAD FUEGO: 100%</div>
+          <div style="width: 180px; height: 8px; background: rgba(255,255,255,0.2); border-radius: 4px; overflow: hidden; margin-top: 4px;">
+            <div id="fireProgressBar" style="width: 100%; height: 100%; background: linear-gradient(90deg, #10b981, #ef4444); transition: width 0.3s ease;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Feedback Box -->
+      <div id="passFeedback" style="background: rgba(17, 24, 39, 0.95); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 1.25rem; margin-top: 1.5rem;">
+        <!-- Populated via JS -->
+      </div>
+
+      <!-- Controls Bar -->
+      <div class="sim-controls-bar">
+        <button id="passActionBtn" class="btn-cta" style="padding: 0.75rem 2rem; font-size: 0.95rem;">
+          Tirar del pasador de seguridad
+        </button>
+      </div>
+    </section>
+
+    <!-- Mappings of VR Controllers -->
+    <h2 style="font-size: 1.45rem; font-weight: 800; color: #fff; margin: 3rem 0 1.25rem;">
+      Mapeo de Controles Hápticos en Meta Touch (6 DoF)
+    </h2>
+
+    <div class="grid-2" style="margin-bottom: 3rem;">
+      <div class="card">
+        <h3 class="card-title">
+          <span class="card-icon">🎮</span>
+          Mano Dominante (Sujeción de Cuerpo y Gatillo)
+        </div>
+        <div class="step-item">
+          <div class="step-number">G</div>
+          <div class="step-details">
+            <h4>Botón Grip (Empuñadura Lateral)</h4>
+            <p>Levantar el extintor del soporte de pared y sostenerlo por el asa de transporte inferior con cálculo de centro de gravedad dinámico.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-number">T</div>
+          <div class="step-details">
+            <h4>Gatillo Index (Palanca Superior de Descarga)</h4>
+            <p>Presión analógica proporcional: regula el caudal del agente extintor y activa la vibración continua de retroceso.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">
+          <span class="card-icon">🖐️</span>
+          Mano Secundaria (Dirección de la Tobera y Seguro)
+        </div>
+        <div class="step-item">
+          <div class="step-number">P</div>
+          <div class="step-details">
+            <h4>Pinch / Grip en Pasador</h4>
+            <p>Acercar la mano secundaria al anillo del pasador y tirar hacia afuera con un movimiento rápido para romper el sello plástico virtual.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-number">M</div>
+          <div class="step-details">
+            <h4>Grip en la Manguera / Tobera</h4>
+            <p>Sujeción a 10 cm de la boquilla para estabilizar el cono de dispersión y orientar el barrido angular con precisión de milímetros.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Extinguisher Class Explorer -->
+    <h2 style="font-size: 1.45rem; font-weight: 800; color: #fff; margin-bottom: 1.25rem;">
+      Clasificación de Incendios y Extintores en el Simulador
+    </h2>
+
+    <div class="card" style="margin-bottom: 3rem;">
+      <p style="color: var(--text-secondary); margin-bottom: 1.25rem; font-size: 0.92rem;">
+        Haz clic en cada clase de fuego para examinar sus propiedades termodinámicas, agente extintor certificado y el escenario virtual programado:
+      </p>
+
+      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+        <button class="nav-link active" data-extinguisher-class="A" style="cursor: pointer; border: 1px solid var(--border-subtle);">Clase A (Sólidos)</button>
+        <button class="nav-link" data-extinguisher-class="B" style="cursor: pointer; border: 1px solid var(--border-subtle);">Clase B (Líquidos)</button>
+        <button class="nav-link" data-extinguisher-class="C" style="cursor: pointer; border: 1px solid var(--border-subtle);">Clase C (Eléctricos)</button>
+        <button class="nav-link" data-extinguisher-class="D" style="cursor: pointer; border: 1px solid var(--border-subtle);">Clase D (Metales)</button>
+        <button class="nav-link" data-extinguisher-class="K" style="cursor: pointer; border: 1px solid var(--border-subtle);">Clase K (Cocinas)</button>
+      </div>
+
+      <!-- Info Container -->
+      <div id="extinguisherInfoCard" style="background: rgba(10, 14, 23, 0.7); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 1.5rem;">
+        <div style="border-left: 3px solid var(--accent-red); padding-left: 1rem; margin-bottom: 1rem;">
+          <h4 style="color: #fff; font-size: 1.2rem; font-weight: 800;">Clase A - Materiales Sólidos Orgánicos</h4>
+          <span style="font-size: 0.8rem; color: var(--accent-amber); font-family: var(--font-mono);">Triángulo Verde [A]</span>
+        </div>
+        <div style="display: grid; gap: 0.75rem; font-size: 0.92rem; color: #cbd5e1;">
+          <p><strong>Combustibles:</strong> Madera, papel, cartón, textiles, plásticos y basura común.</p>
+          <p><strong>Agente Extintor Recomendado:</strong> <span style="color: #38bdf8;">Agua presurizada o Polvo Químico Seco (PQS ABC).</span></p>
+          <p><strong>Técnica de Combate:</strong> Enfriamiento directo de la brasa con agua o sofocación con polvo químico seco.</p>
+          <p><strong>Escenario en el Simulador VR:</strong> <span style="color: #f87171;">Simulación de incendio en archivador de oficina y tarimas de madera de almacén universitario.</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="page-pagination">
+      <a href="resultados.html" class="pagination-btn">
+        <span class="pagination-label">Capítulo anterior</span>
+        <span class="pagination-title">← 07. Resultados Esperados</span>
+      </a>
+      <a href="conclusiones.html" class="pagination-btn" style="text-align: right;">
+        <span class="pagination-label">Siguiente capítulo</span>
+        <span class="pagination-title">09. Conclusiones →</span>
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-col">
+          <h4>Fire Extinguisher Simulator VR</h4>
+          <p>Materia: Tecnologías Inmersivas · Proyecto Académico 2026</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="introduccion.html">Introducción</a></li>
+            <li><a href="objetivos.html">Objetivos</a></li>
+            <li><a href="problema.html">Problema</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Desarrollo</h4>
+          <ul class="footer-links">
+            <li><a href="justificacion.html">Justificación</a></li>
+            <li><a href="metodologia.html">Metodología</a></li>
+            <li><a href="resultados.html">Resultados</a></li>
+            <li><a href="simulador.html">Simulador VR</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Documentos</h4>
+          <ul class="footer-links">
+            <li><a href="conclusiones.html">Conclusiones</a></li>
+            <li><a href="bibliografia.html">Bibliografía</a></li>
+            <li><a href="anexos.html">Anexos</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Universidad - Tecnologías Inmersivas</div>
+        <div>Meta Quest 2 Training Suite</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

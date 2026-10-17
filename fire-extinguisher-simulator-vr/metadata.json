@@ -1,0 +1,8 @@
+{
+  "name": "Fire Extinguisher Simulator VR",
+  "description": "Capacitación en el uso correcto de extintores mediante realidad virtual para la materia de Tecnologías Inmersivas",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

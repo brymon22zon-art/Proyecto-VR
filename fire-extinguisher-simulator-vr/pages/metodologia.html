@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Metodología de Desarrollo | Fire Extinguisher Simulator VR</title>
+  <meta name="description" content="Metodología de desarrollo e ingeniería del simulador de extintores en Realidad Virtual para Meta Quest 2." />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="../index.html" class="brand-link">
+        <div class="brand-icon">🔥</div>
+        <div class="brand-text">
+          <span class="brand-title">Fire Extinguisher Simulator VR</span>
+          <span class="brand-sub">Tecnologías Inmersivas</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="../index.html" class="nav-link">Inicio</a>
+        
+        <div class="nav-dropdown">
+          <button class="nav-link dropdown-trigger" type="button">
+            Fundamentos ▾
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="introduccion.html" class="nav-link">02. Introducción</a></li>
+            <li><a href="objetivos.html" class="nav-link">03. Objetivos</a></li>
+            <li><a href="problema.html" class="nav-link">04. Planteamiento del Problema</a></li>
+            <li><a href="justificacion.html" class="nav-link">05. Justificación</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-dropdown">
+          <button class="nav-link dropdown-trigger active" type="button">
+            Investigación ▾
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="metodologia.html" class="nav-link active">06. Metodología</a></li>
+            <li><a href="resultados.html" class="nav-link">07. Resultados Esperados</a></li>
+            <li><a href="conclusiones.html" class="nav-link">09. Conclusiones</a></li>
+          </ul>
+        </div>
+
+        <a href="simulador.html" class="nav-link">08. Simulador</a>
+        <a href="bibliografia.html" class="nav-link">10. Bibliografía</a>
+        <a href="anexos.html" class="nav-link">11. Anexos</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="simulador.html" class="btn-cta">Probar Simulador VR</a>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Abrir menú" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav" id="mobileNav">
+      <ul class="mobile-nav-list">
+        <li><a href="../index.html" class="nav-link">01. Inicio</a></li>
+        <li><a href="introduccion.html" class="nav-link">02. Introducción</a></li>
+        <li><a href="objetivos.html" class="nav-link">03. Objetivos</a></li>
+        <li><a href="problema.html" class="nav-link">04. Planteamiento del Problema</a></li>
+        <li><a href="justificacion.html" class="nav-link">05. Justificación</a></li>
+        <li><a href="metodologia.html" class="nav-link active">06. Metodología</a></li>
+        <li><a href="resultados.html" class="nav-link">07. Resultados Esperados</a></li>
+        <li><a href="simulador.html" class="nav-link">08. Experiencia del Simulador</a></li>
+        <li><a href="conclusiones.html" class="nav-link">09. Conclusiones</a></li>
+        <li><a href="bibliografia.html" class="nav-link">10. Bibliografía</a></li>
+        <li><a href="anexos.html" class="nav-link">11. Anexos</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="academic-badge-bar">
+      <span>Capítulo 06</span>
+      <span class="academic-separator">·</span>
+      <span>Cátedra de <strong>Tecnologías Inmersivas</strong></span>
+      <span class="academic-separator">·</span>
+      <span>Marco Metodológico e Ingeniería de Software VR</span>
+    </div>
+
+    <div class="page-hero">
+      <div class="page-kicker">Capítulo 06 · Ingeniería y Arquitectura</div>
+      <h1 class="page-title">
+        Metodología de <span class="highlight">Desarrollo VR</span>
+      </h1>
+      <p class="page-subtitle">
+        Proceso iterativo en cinco etapas: desde el análisis de la normativa NFPA 10 hasta la optimización gráfica y háptica en el chipset móvil de Meta Quest 2.
+      </p>
+    </div>
+
+    <!-- 5 Phase Step List -->
+    <div class="card" style="margin-bottom: 2.75rem;">
+      <h2 style="font-size: 1.35rem; font-weight: 800; color: #fff; margin-bottom: 1.5rem;">
+        Fases del Ciclo de Vida del Proyecto
+      </h2>
+
+      <div class="step-item">
+        <div class="step-number">01</div>
+        <div class="step-details">
+          <h4>Fase 1: Levantamiento de Requisitos y Modelado Normativo NFPA 10</h4>
+          <p>
+            Revisión exhaustiva del estándar NFPA 10 para extintores portátiles. Definición de distancias mínimas y máximas de seguridad, tiempos reglamentarios de descarga por peso (9 kg de PQS = 14 segundos continuos), ángulos efectivos de barrido y codificación de colores de seguridad.
+          </p>
+        </div>
+      </div>
+
+      <div class="step-item">
+        <div class="step-number">02</div>
+        <div class="step-details">
+          <h4>Fase 2: Modelado 3D, Texturizado PBR y Optimización de Mallas</h4>
+          <p>
+            Creación de la geometría del extintor en Blender mediante modelado poligonal de bajo presupuesto (<em>low-poly</em> con menos de 4,500 triángulos por extintor). Generación de mapas de normales y rugosidad PBR (Physically Based Rendering) para garantizar máximo realismo sin penalizar la GPU móvil.
+          </p>
+        </div>
+      </div>
+
+      <div class="step-item">
+        <div class="step-number">03</div>
+        <div class="step-details">
+          <h4>Fase 3: Lógica Física de Interacción y Sistema de Partículas VFX</h4>
+          <p>
+            Implementación del pipeline de interacción con OpenXR: agarre a dos manos (<em>two-handed grab</em>), extracción del pasador mediante colisionadores cinemáticos y deformación elástica de la manguera. Simulación del chorro con GPU Particle Systems emulando la dispersión cónica de polvo presurizado.
+          </p>
+        </div>
+      </div>
+
+      <div class="step-item">
+        <div class="step-number">04</div>
+        <div class="step-details">
+          <h4>Fase 4: Motor de Combustión y Algoritmo de Extinción Térmica</h4>
+          <p>
+            El fuego se estructura como una matriz de puntos térmicos (voxel heat-map). Las partículas del agente extintor emiten eventos de colisión que reducen la variable <code>HealthPoints</code> de cada punto térmico. Si el usuario no aplica el barrido (SWEEP), el calor remanente reactiva los voxeles circundantes por simulación de reignición.
+          </p>
+        </div>
+      </div>
+
+      <div class="step-item">
+        <div class="step-number">05</div>
+        <div class="step-details">
+          <h4>Fase 5: Telemetría, Evaluación Automatizada y Calibración Háptica</h4>
+          <p>
+            Captura de eventos a 60 Hz: seguimiento de trayectoria de la tobera, verificación de distancia con raycasting y modulación de la retroalimentación háptica en los actuadores de los mandos Meta Touch para transmitir la presión y el retroceso de descarga.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Architecture Diagram / Cards -->
+    <h2 style="font-size: 1.45rem; font-weight: 800; color: #fff; margin-bottom: 1.25rem;">
+      Arquitectura del Pipeline de Tecnologías Inmersivas
+    </h2>
+
+    <div class="grid-3" style="margin-bottom: 3rem;">
+      <div class="card">
+        <div class="card-title">
+          <span class="card-icon">🥽</span>
+          Plataforma Hardware
+        </div>
+        <ul style="list-style: none; font-size: 0.88rem; color: #cbd5e1; display: flex; flex-direction: column; gap: 0.5rem;">
+          <li><strong>Dispositivo:</strong> Meta Quest 2 Standalone</li>
+          <li><strong>SoC:</strong> Qualcomm Snapdragon XR2</li>
+          <li><strong>Resolución:</strong> 1832 × 1920 px por ojo</li>
+          <li><strong>Tasa de Refresco:</strong> 72 Hz / 90 Hz fijo</li>
+          <li><strong>Rastreo:</strong> 6 DoF Inside-Out SLAM</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <span class="card-icon">⚙️</span>
+          Framework de Software
+        </div>
+        <ul style="list-style: none; font-size: 0.88rem; color: #cbd5e1; display: flex; flex-direction: column; gap: 0.5rem;">
+          <li><strong>API Central:</strong> Khronos OpenXR Runtime</li>
+          <li><strong>Mecánicas:</strong> XR Interaction Toolkit</li>
+          <li><strong>Física:</strong> PhysX Rigid Bodies & Hinge Joints</li>
+          <li><strong>Partículas:</strong> Shuriken VFX Graph en GPU</li>
+          <li><strong>Audio:</strong> Spatial 3D HRTF Audio</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <span class="card-icon">📈</span>
+          Restricciones de Rendimiento
+        </div>
+        <ul style="list-style: none; font-size: 0.88rem; color: #cbd5e1; display: flex; flex-direction: column; gap: 0.5rem;">
+          <li><strong>Draw Calls:</strong> &lt; 100 por fotograma</li>
+          <li><strong>Polígonos:</strong> &lt; 85,000 vértices en escena</li>
+          <li><strong>Sombreado:</strong> Mobile Optimized Unlit/Simple Lit</li>
+          <li><strong>Anti-Aliasing:</strong> 4x MSAA activo</li>
+          <li><strong>Latencia MTP:</strong> &lt; 18 milisegundos</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Media Section with Captura Simulador -->
+    <div class="media-card" style="margin-bottom: 3rem;">
+      <div class="media-image-wrapper">
+        <img src="../Imagenes/captura_simulador.jpg" alt="Simulación de extinción en VR" class="media-image lightbox-trigger" />
+        <span class="media-badge">Inspección de Algoritmo</span>
+      </div>
+      <div class="media-content">
+        <h3 style="font-size: 1.2rem; font-weight: 800; color: #fff; margin-bottom: 0.5rem;">
+          Validación del Protocolo P.A.S.S. en Tiempo Real
+        </h3>
+        <p class="card-text">
+          La interfaz HUD proyectada en el espacio virtual no intrusivo orienta al alumno paso a paso: confirma la extracción del seguro (Pull), detecta la colisión de la tobera hacia el piso (Aim), supervisa la presión del gatillo analógico (Squeeze) y mide la amplitud angular en grados del barrido horizontal (Sweep).
+        </p>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="page-pagination">
+      <a href="justificacion.html" class="pagination-btn">
+        <span class="pagination-label">Capítulo anterior</span>
+        <span class="pagination-title">← 05. Justificación</span>
+      </a>
+      <a href="resultados.html" class="pagination-btn" style="text-align: right;">
+        <span class="pagination-label">Siguiente capítulo</span>
+        <span class="pagination-title">07. Resultados Esperados →</span>
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-col">
+          <h4>Fire Extinguisher Simulator VR</h4>
+          <p>Materia: Tecnologías Inmersivas · Proyecto Académico 2026</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="introduccion.html">Introducción</a></li>
+            <li><a href="objetivos.html">Objetivos</a></li>
+            <li><a href="problema.html">Problema</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Desarrollo</h4>
+          <ul class="footer-links">
+            <li><a href="justificacion.html">Justificación</a></li>
+            <li><a href="metodologia.html">Metodología</a></li>
+            <li><a href="resultados.html">Resultados</a></li>
+            <li><a href="simulador.html">Simulador VR</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Documentos</h4>
+          <ul class="footer-links">
+            <li><a href="conclusiones.html">Conclusiones</a></li>
+            <li><a href="bibliografia.html">Bibliografía</a></li>
+            <li><a href="anexos.html">Anexos</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Universidad - Tecnologías Inmersivas</div>
+        <div>Meta Quest 2 Training Suite</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
